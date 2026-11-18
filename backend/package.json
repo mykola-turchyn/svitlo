@@ -1,0 +1,20 @@
+{
+  "name": "svitlo-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Outage schedules API for the Svitlo iOS app: fetches Yasno/DTEK schedules, normalises and caches them.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "SOURCE=demo node --watch src/server.ts",
+    "start": "node src/server.ts",
+    "test": "node --test 'test/**/*.test.ts'",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "typescript": "^5.9.0"
+  }
+}
